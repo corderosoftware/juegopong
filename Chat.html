@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <h1>Chat</h1>
+    
+    <div id="chat-container">
+        <div id="chat-messages">
+            <div class="message received">
+                <div class="message-sender">Juan</div>
+                <div class="message-text">Hola, ¿cómo estás?</div>
+                <div class="message-time">10:30 AM</div>
+            </div>
+            
+            <div class="message sent">
+                <div class="message-sender">Tú</div>
+                <div class="message-text">¡Hola! Estoy bien, gracias. ¿Y tú?</div>
+                <div class="message-time">10:31 AM</div>
+            </div>
+            
+            <div class="message received">
+                <div class="message-sender">Juan</div>
+                <div class="message-text">Muy bien, gracias por preguntar.</div>
+                <div class="message-time">10:32 AM</div>
+            </div>
+            
+            <div class="message received">
+                <div class="message-sender">María</div>
+                <div class="message-text">¡Hola chicos! ¿De qué hablan?</div>
+                <div class="message-time">10:33 AM</div>
+            </div>
+            
+            <div class="message sent">
+                <div class="message-sender">Tú</div>
+                <div class="message-text">De todo un poco, ¿cómo te va?</div>
+                <div class="message-time">10:34 AM</div>
+            </div>
+        </div>
+        
+        <div id="chat-input">
+            <form id="message-form">
+                <input type="text" id="message-text" name="message" placeholder="Escribe tu mensaje..." required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
