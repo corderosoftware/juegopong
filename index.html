@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Pong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal del juego -->
+    <div class="container">
+        <!-- Encabezado -->
+        <h1 class="title">PONG</h1>
+
+        <!-- Sección de instrucciones -->
+        <div class="instructions">
+            <h2>Instrucciones</h2>
+            <div class="instructions-content">
+                <div class="player-instructions">
+                    <h3>Jugador 1 (Izquierda - Azul)</h3>
+                    <p>↑ Flecha arriba - Subir</p>
+                    <p>↓ Flecha abajo - Bajar</p>
+                </div>
+                <div class="player-instructions">
+                    <h3>Jugador 2 (Derecha - Rojo)</h3>
+                    <p>A - Subir</p>
+                    <p>Z - Bajar</p>
+                </div>
+            </div>
+            <p class="rules">Golpea la pelota para que el rival no pueda devolverla. ¡Primero a 11 puntos gana!</p>
+        </div>
+
+        <!-- Sección de marcador -->
+        <div class="scoreboard">
+            <div class="score">
+                <span class="player-name">Jugador 1</span>
+                <span class="score-value" id="player1Score">0</span>
+            </div>
+            <div class="score">
+                <span class="player-name">Jugador 2</span>
+                <span class="score-value" id="player2Score">0</span>
+            </div>
+        </div>
+
+        <!-- Área del juego (canvas) -->
+        <div class="game-container">
+            <canvas id="gameCanvas" width="900" height="500"></canvas>
+        </div>
+
+        <!-- Sección de estado y botones -->
+        <div class="game-status">
+            <p id="statusMessage" class="status-message">Presiona ESPACIO para comenzar</p>
+            <button id="startBtn" class="btn btn-primary">Iniciar Juego</button>
+            <button id="resetBtn" class="btn btn-secondary">Reiniciar Marcador</button>
+        </div>
+
+        <!-- Sección de créditos -->
+        <footer class="footer">
+            <p>Juego de Pong creado con HTML5, CSS3 y JavaScript</p>
+        </footer>
+    </div>
+
+    <!-- Importar el archivo de script -->
+    <script src="script.js"></script>
+</body>
+</html>
